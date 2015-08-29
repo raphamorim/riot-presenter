@@ -1,0 +1,62 @@
+body {
+  font-family: 'open-sans', sans-serif;
+  font-size: 20px;
+  border: 0;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.elemento {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.elemento.gray {
+  background: #f8f8f8;
+}
+
+.elemento.white {
+  background: #FFFFFF;
+}
+
+.elemento .container {
+  padding: 30px;
+  margin: 0 auto;
+  width: 400px;
+  cursor: default;
+}
+
+.elemento .container h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.elemento .container p {
+  font-size: 14px;
+  line-height: 1.3em;
+  text-align: justify;
+}
+
+.elemento .container ul {
+  padding: 0;
+}
+
+.elemento .container li {
+  list-style-type: none;
+  padding: .2em 0;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+.elemento:hover li {
+  opacity: 1;
+}
+
+.elemento .container .configuracoes li span {
+  font-weight: 600;
+  font-size: 20px;
+}

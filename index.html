@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Elemento</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="app.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.5/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script>html5.addElements('elemento')</script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <elemento nome='Lead Scoring' icone="" cor='white' direcao="direita"></elemento>
+    <elemento nome='WebForm' icone="ascending8.png" cor='gray' direcao="esquerda"></elemento>
+    <elemento nome='WebForm' icone="" cor='white' direcao="esquerda"></elemento>
+
+    <script src="elemento.tag" type="riot/tag"></script>
+    <script src="https://cdn.jsdelivr.net/g/riot@2.0.14(riot.min.js+compiler.min.js)"></script>
+
+    <script type="text/javascript">
+        riot.mount('elemento', {
+            descricao: 'Through advanced forms we can develop a better data collection process allowing us to automate and target your leads through segmented lists.',
+            configuracoes: [
+                {quantidade: 30, descricao: 'regras de validação'}, 
+                {quantidade: 5, descricao: 'relatórios'}, 
+            ],
+            metricas: {
+                hoje: '4 leads',
+                mes: '100 leads'
+            }
+        });
+    </script>
+  </body>
+</html>
