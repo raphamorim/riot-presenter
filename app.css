@@ -24,7 +24,8 @@ body {
 .elemento .container {
   padding: 30px;
   margin: 0 auto;
-  width: 400px;
+  width: 700px;
+  height: 300px;
   cursor: default;
 }
 
@@ -36,8 +37,8 @@ body {
 
 .elemento .container p {
   font-size: 14px;
+  color: #555;
   line-height: 1.3em;
-  text-align: justify;
 }
 
 .elemento .container ul {
@@ -48,15 +49,39 @@ body {
   list-style-type: none;
   padding: .2em 0;
   font-size: 14px;
-  opacity: 0;
-  transition: all 500ms ease;
+  color: #555;
+  transition: all 150ms ease;
 }
 
-.elemento:hover li {
-  opacity: 1;
+.elemento .container .content.right {
+  margin-top: 35px;
+  float: right;
+  width: 40%;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-.elemento .container .configuracoes li span {
+.elemento.white .content.right{
+  border-left: 1px solid #f9f9f9; 
+}
+
+.elemento.gray .content.right{
+  border-left: 1px solid #a9a9a9; 
+}
+
+.elemento .container .content.left {
+  float: left;
+  width: 55%;
+}
+
+.elemento hr {
+  background: none;
+  border: none;
+  border-top: 2px dotted #444; 
+  display: block;
+}
+
+.elemento .container .configuracoes li span, .elemento .container .metricas li span {
   font-weight: 600;
   font-size: 20px;
 }
